@@ -1,11 +1,11 @@
 # colorblindness
 CSS filter for types of color blindness
 
-Protanopia
-Protanomaly
-Deuteranopia
-Deuteranomaly
-Tritanopia
-Tritanomaly
-Achromatopsia
+Protanopia<br>
+Protanomaly<br>
+Deuteranopia<br>
+Deuteranomaly<br>
+Tritanopia<br>
+Tritanomaly<br>
+Achromatopsia<br>
 Achromatomaly
