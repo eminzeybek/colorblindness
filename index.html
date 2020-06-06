@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Color Blindness</title>
+	<meta name="author" content="Emin ZEYBEK">
+	<meta name="description" content="Ajans Feedback - www.ajansfeedback.com">
+	<link rel="stylesheet" href="master/colorfilter/dist/css/main.css">
+	<link rel="stylesheet" href="master/colorfilter/css/main.scss">
+</head>
+
+<body>
+	
+	<ul class="colorfilter" id="filterList">
+		<li><a href="javascript:void(0)" class="button" id="colorblind1">Protanopia</a></li>
+		<li><a href="javascript:void(0)" class="button" id="colorblind2">Protanomaly</a></li>
+		<li><a href="javascript:void(0)" class="button" id="colorblind3">Deuteranopia</a></li>
+		<li><a href="javascript:void(0)" class="button" id="colorblind4">Deuteranomaly</a></li>
+		<li><a href="javascript:void(0)" class="button" id="colorblind5">Tritanopia</a></li>
+		<li><a href="javascript:void(0)" class="button" id="colorblind6">Tritanomaly</a></li>
+		<li><a href="javascript:void(0)" class="button" id="colorblind7">Achromatopsia</a></li>
+		<li><a href="javascript:void(0)" class="button" id="colorblind8">Achromatomaly</a></li>
+		<li><a href="https://www.ajansfeedback.com" target="_blank" class="button" id="">Visit Website</a></li>
+    </ul>
+	<img src="https://i.picsum.photos/id/534/500/300.jpg"/>
+	<img src="https://i.picsum.photos/id/180/500/300.jpg"/>
+	<img src="https://i.picsum.photos/id/800/500/300.jpg"/>
+	<img src="https://i.picsum.photos/id/103/500/300.jpg"/>
+	<img src="https://i.picsum.photos/id/607/500/300.jpg"/>
+	<img src="https://i.picsum.photos/id/200/500/300.jpg"/>
+	<img src="https://i.picsum.photos/id/703/500/300.jpg"/>
+	<img src="https://i.picsum.photos/id/407/500/300.jpg"/>
+	<img src="https://i.picsum.photos/id/600/500/300.jpg"/>
+	
+	
+	
+</body>
+	
+</html>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+    </defs>
+  </svg>
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
+    <defs>
+      <filter id="protanopia">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.567, 0.433, 0,     0, 0
+                  0.558, 0.442, 0,     0, 0
+                  0,     0.242, 0.758, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="protanomaly">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.817, 0.183, 0,     0, 0
+                  0.333, 0.667, 0,     0, 0
+                  0,     0.125, 0.875, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="deuteranopia">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.625, 0.375, 0,   0, 0
+                  0.7,   0.3,   0,   0, 0
+                  0,     0.3,   0.7, 0, 0
+                  0,     0,     0,   1, 0"/>
+      </filter>
+      <filter id="deuteranomaly">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.8,   0.2,   0,     0, 0
+                  0.258, 0.742, 0,     0, 0
+                  0,     0.142, 0.858, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="tritanopia">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.95, 0.05,  0,     0, 0
+                  0,    0.433, 0.567, 0, 0
+                  0,    0.475, 0.525, 0, 0
+                  0,    0,     0,     1, 0"/>
+      </filter>
+      <filter id="tritanomaly">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.967, 0.033, 0,     0, 0
+                  0,     0.733, 0.267, 0, 0
+                  0,     0.183, 0.817, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="achromatopsia">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.299, 0.587, 0.114, 0, 0
+                  0.299, 0.587, 0.114, 0, 0
+                  0.299, 0.587, 0.114, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+      <filter id="achromatomaly">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="0.618, 0.320, 0.062, 0, 0
+                  0.163, 0.775, 0.062, 0, 0
+                  0.163, 0.320, 0.516, 0, 0
+                  0,     0,     0,     1, 0"/>
+      </filter>
+    </defs>
+  </svg>
+  <script src="master/colorfilter/scripts/vue.min.js"></script>
+  <script src="master/colorfilter/scripts/main.js"></script>
